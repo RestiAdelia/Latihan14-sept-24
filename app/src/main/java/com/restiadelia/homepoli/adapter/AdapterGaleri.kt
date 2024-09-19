@@ -21,7 +21,7 @@ class AdapterGaleri(
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        // Pastikan layout item_galeri.xml yang benar digunakan di sini
+
         val view = LayoutInflater.from(context).inflate(R.layout.item_galeri, parent, false)
         return ViewHolder(view)
     }
@@ -31,7 +31,7 @@ class AdapterGaleri(
         holder.imageView.setImageResource(model.imageResId)
 
         holder.itemView.setOnClickListener {
-            // Menggunakan DetailFoto untuk menampilkan gambar yang diklik
+
             val intent = Intent(context, DetailFoto::class.java)
             intent.putExtra("imageResId", model.imageResId)
             context.startActivity(intent)
