@@ -13,6 +13,12 @@
         android:theme="@style/Theme.HomePoli"
         tools:targetApi="31">
         <activity
+            android:name=".DetailFoto"
+            android:exported="false" />
+        <activity
+            android:name=".layoutgaleri"
+            android:exported="false" />
+        <activity
             android:name=".Detailfoto"
             android:exported="false" />
         <activity
